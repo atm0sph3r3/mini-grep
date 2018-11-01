@@ -13,9 +13,6 @@ fn main() {
         process::exit(1);
     });
 
-    println!("Searching for {}", config.query);
-    println!("In file {}", config.filename);
-
     // if and only if `run(config)` returns `Err`, enter this scope
     // this is a shortcut for defining the return of `run(config)`
     // and then `match`ing on `Err` and ignoring all others
